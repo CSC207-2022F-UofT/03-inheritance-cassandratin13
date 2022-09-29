@@ -30,6 +30,8 @@ public abstract class Bag {
     public Bag(String color, int capacity) {
         this.color = color;
         this.capacity = capacity;
+        this.numberOfContents = 0;
+        this.contents = new String[capacity];
     }
 
     /*
@@ -39,25 +41,19 @@ public abstract class Bag {
      *           - getNumberOfContents
      *           - getCapacity
      */
-    public String getColor() {
-        return color;
-    }
+    public String getColor() { return this.color; }
 
     public int getNumberOfContents() {
-        return numberOfContents;
+        return this.numberOfContents;
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
+    public int getCapacity() { return this.capacity; }
 
     /*
      * TODO: Create a setter function called setColor which sets the
      *       color of this bag to the given color.
      */
-    public void setColor(String color) {
-        this.color = color;
-    }
+    public void setColor(String color) { this.color = color; }
 
     /*
      * TODO: Create a method called addItem that takes in a String
@@ -93,7 +89,7 @@ public abstract class Bag {
      *
      * If there are no items in this Bag, return null.
      *
-     * @return
+     * @return the item removed from this Bag, or null if the Bag is empty
      */
     public String popItem() {
         if (numberOfContents == 0) {
@@ -125,7 +121,7 @@ public abstract class Bag {
      * This method requires you to have created the private
      * instance variables mentioned above.
      *
-     * @return
+     * @return the details of this Bag
      */
     @Override
     public String toString() {

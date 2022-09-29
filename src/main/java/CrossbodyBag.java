@@ -33,13 +33,14 @@
 public class CrossbodyBag extends Bag{
 
     private int numberOfStraps;
+
     /**
      *
      * Creates a new CrossbodyBag with the given color and capacity.
      *
-     * @param color
-     * @param capacity
-     * @param numberOfStraps
+     * @param color          The colour of this CrossbodyBag
+     * @param capacity       The capacity of this CrossbodyBag
+     * @param numberOfStraps The number of straps of this CrossbodyBag
      *
      */
     public CrossbodyBag(String color, int capacity, int numberOfStraps) {
@@ -47,9 +48,7 @@ public class CrossbodyBag extends Bag{
         this.numberOfStraps = numberOfStraps;
     }
 
-    public int getNumberOfStraps() {
-        return numberOfStraps;
-    }
+    public int getNumberOfStraps() { return this.numberOfStraps; }
 
     /**
      * Increase the capacity of this bag by 1.

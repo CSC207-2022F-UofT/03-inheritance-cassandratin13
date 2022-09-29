@@ -13,6 +13,9 @@ class BagMain {
      *
      * This method should work for *all* Bags! We will test this method
      * on new Bag types (and HandBag subclasses)!
+     *
+     * @param bags An array of Bags
+     * @param double_enhance_handbags True if Handbags should be enhanced a second time
      */
     public static void enhanceBags(Bag[] bags, boolean double_enhance_handbags) {
         // TODO: Implement this.
@@ -20,7 +23,7 @@ class BagMain {
             for (Bag bag : bags) {
                 bag.enhance();
                 if (bag instanceof HandBag) {
-                    // Enhance any Handbage a second time
+                    // Enhance any Handbags a second time
                     bag.enhance();
                 }
             }
