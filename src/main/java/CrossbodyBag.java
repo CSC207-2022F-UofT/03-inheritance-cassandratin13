@@ -40,7 +40,7 @@ public class CrossbodyBag extends Bag{
      *
      * @param color          The colour of this CrossbodyBag
      * @param capacity       The capacity of this CrossbodyBag
-     * @param numberOfStraps The number of straps of this CrossbodyBag
+     * @param numberOfStraps The number of straps  of this CrossbodyBag
      *
      */
     public CrossbodyBag(String color, int capacity, int numberOfStraps) {

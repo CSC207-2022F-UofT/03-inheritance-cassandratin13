@@ -15,7 +15,7 @@ class BagMain {
      * on new Bag types (and HandBag subclasses)!
      *
      * @param bags An array of Bags
-     * @param double_enhance_handbags True if Handbags should be enhanced a second time
+     * @param double_enhance_handbags True iff Handbags should be enhanced a second time
      */
     public static void enhanceBags(Bag[] bags, boolean double_enhance_handbags) {
         // TODO: Implement this.
